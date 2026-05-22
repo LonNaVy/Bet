@@ -1,0 +1,778 @@
+<html lang="pt-BR" class="has-offscreen with-fancybox" style="--fancybox-scrollbar-compensate: 15px;"><head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.4",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+
+	    <script src="data:text/javascript;base64,CiAgICAgICAgKGZ1bmN0aW9uIChleHBvcnRzLCBkKSB7CiAgICAgICAgICAgIHZhciBfaXNSZWFkeSA9IGZhbHNlLAogICAgICAgICAgICAgICAgX2V2ZW50LAogICAgICAgICAgICAgICAgX2ZucyA9IFtdOwoKICAgICAgICAgICAgZnVuY3Rpb24gb25SZWFkeShldmVudCkgewogICAgICAgICAgICAgICAgZC5yZW1vdmVFdmVudExpc3RlbmVyKCJET01Db250ZW50TG9hZGVkIiwgb25SZWFkeSk7CiAgICAgICAgICAgICAgICBfaXNSZWFkeSA9IHRydWU7CiAgICAgICAgICAgICAgICBfZXZlbnQgPSBldmVudDsKICAgICAgICAgICAgICAgIF9mbnMuZm9yRWFjaChmdW5jdGlvbiAoX2ZuKSB7CiAgICAgICAgICAgICAgICAgICAgdmFyIGZuID0gX2ZuWzBdLAogICAgICAgICAgICAgICAgICAgICAgICBjb250ZXh0ID0gX2ZuWzFdOwogICAgICAgICAgICAgICAgICAgIGZuLmNhbGwoY29udGV4dCB8fCBleHBvcnRzLCB3aW5kb3cualF1ZXJ5KTsKICAgICAgICAgICAgICAgIH0pOwogICAgICAgICAgICB9CgogICAgICAgICAgICBmdW5jdGlvbiBvblJlYWR5SWUoZXZlbnQpIHsKICAgICAgICAgICAgICAgIGlmIChkLnJlYWR5U3RhdGUgPT09ICJjb21wbGV0ZSIpIHsKICAgICAgICAgICAgICAgICAgICBkLmRldGFjaEV2ZW50KCJvbnJlYWR5c3RhdGVjaGFuZ2UiLCBvblJlYWR5SWUpOwogICAgICAgICAgICAgICAgICAgIF9pc1JlYWR5ID0gdHJ1ZTsKICAgICAgICAgICAgICAgICAgICBfZXZlbnQgPSBldmVudDsKICAgICAgICAgICAgICAgICAgICBfZm5zLmZvckVhY2goZnVuY3Rpb24gKF9mbikgewogICAgICAgICAgICAgICAgICAgICAgICB2YXIgZm4gPSBfZm5bMF0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb250ZXh0ID0gX2ZuWzFdOwogICAgICAgICAgICAgICAgICAgICAgICBmbi5jYWxsKGNvbnRleHQgfHwgZXhwb3J0cywgZXZlbnQpOwogICAgICAgICAgICAgICAgICAgIH0pOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CgogICAgICAgICAgICBkLmFkZEV2ZW50TGlzdGVuZXIgJiYgZC5hZGRFdmVudExpc3RlbmVyKCJET01Db250ZW50TG9hZGVkIiwgb25SZWFkeSkgfHwKICAgICAgICAgICAgZC5hdHRhY2hFdmVudCAmJiBkLmF0dGFjaEV2ZW50KCJvbnJlYWR5c3RhdGVjaGFuZ2UiLCBvblJlYWR5SWUpOwoKICAgICAgICAgICAgZnVuY3Rpb24gZG9tUmVhZHkoZm4sIGNvbnRleHQpIHsKICAgICAgICAgICAgICAgIGlmIChfaXNSZWFkeSkgewogICAgICAgICAgICAgICAgICAgIGZuLmNhbGwoY29udGV4dCwgX2V2ZW50KTsKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICBfZm5zLnB1c2goW2ZuLCBjb250ZXh0XSk7CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGV4cG9ydHMubWVzbWVyaXplRG9tUmVhZHkgPSBkb21SZWFkeTsKICAgICAgICB9KSh3aW5kb3csIGRvY3VtZW50KTsKICAgIA==" data-rocket-status="executed">
+        (function (exports, d) {
+            var _isReady = false,
+                _event,
+                _fns = [];
+
+            function onReady(event) {
+                d.removeEventListener("DOMContentLoaded", onReady);
+                _isReady = true;
+                _event = event;
+                _fns.forEach(function (_fn) {
+                    var fn = _fn[0],
+                        context = _fn[1];
+                    fn.call(context || exports, window.jQuery);
+                });
+            }
+
+            function onReadyIe(event) {
+                if (d.readyState === "complete") {
+                    d.detachEvent("onreadystatechange", onReadyIe);
+                    _isReady = true;
+                    _event = event;
+                    _fns.forEach(function (_fn) {
+                        var fn = _fn[0],
+                            context = _fn[1];
+                        fn.call(context || exports, event);
+                    });
+                }
+            }
+
+            d.addEventListener && d.addEventListener("DOMContentLoaded", onReady) ||
+            d.attachEvent && d.attachEvent("onreadystatechange", onReadyIe);
+
+            function domReady(fn, context) {
+                if (_isReady) {
+                    fn.call(context, _event);
+                }
+
+                _fns.push([fn, context]);
+            }
+
+            exports.mesmerizeDomReady = domReady;
+        })(window, document);
+    </script>
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO plugin v27.1.1 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Fortune Tiger Demo - Play for Free</title>
+<link crossorigin="" data-rocket-preconnect="" href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" data-rocket-preconnect="" href="https://www.googletagmanager.com" rel="preconnect">
+<link crossorigin="" data-rocket-preload="" as="font" href="https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2" rel="preload"><link rel="preload" data-rocket-preload="" as="image" href="https://demofortunetiger.com/wp-content/uploads/2025/06/banner3.jpg" fetchpriority="high">
+	<meta name="description" content="Want to play Fortune Tiger Demo? Play on our website for free, with no registration, no ads, and in full-screen mode">
+	<link rel="canonical" href="https://demofortunetiger.com/">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Fortune Tiger Demo - Play for Free">
+	<meta property="og:description" content="Want to play Fortune Tiger Demo? Play on our website for free, with no registration, no ads, and in full-screen mode">
+	<meta property="og:url" content="https://demofortunetiger.com/">
+	<meta property="og:site_name" content="Fortune Tiger">
+	<meta property="article:modified_time" content="2026-03-24T09:02:53+00:00">
+	<meta property="og:image" content="https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-2.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":["WebPage","FAQPage"],"@id":"https://demofortunetiger.com/","url":"https://demofortunetiger.com/","name":"Fortune Tiger Demo - Play for Free","isPartOf":{"@id":"https://demofortunetiger.com/#website"},"primaryImageOfPage":{"@id":"https://demofortunetiger.com/#primaryimage"},"image":{"@id":"https://demofortunetiger.com/#primaryimage"},"thumbnailUrl":"https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-2.jpg","datePublished":"2025-08-19T13:32:00+00:00","dateModified":"2026-03-24T09:02:53+00:00","description":"Want to play Fortune Tiger Demo? Play on our website for free, with no registration, no ads, and in full-screen mode","breadcrumb":{"@id":"https://demofortunetiger.com/#breadcrumb"},"mainEntity":[{"@id":"https://demofortunetiger.com/#faq-question-1712082514293"},{"@id":"https://demofortunetiger.com/#faq-question-1712082519200"},{"@id":"https://demofortunetiger.com/#faq-question-1712082525188"},{"@id":"https://demofortunetiger.com/#faq-question-1758284724048"},{"@id":"https://demofortunetiger.com/#faq-question-1758284747618"}],"inLanguage":"pt-BR","potentialAction":[{"@type":"ReadAction","target":["https://demofortunetiger.com/"]}]},{"@type":"ImageObject","inLanguage":"pt-BR","@id":"https://demofortunetiger.com/#primaryimage","url":"https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-2.jpg","contentUrl":"https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-2.jpg","width":690,"height":306},{"@type":"BreadcrumbList","@id":"https://demofortunetiger.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://demofortunetiger.com/#website","url":"https://demofortunetiger.com/","name":"Fortune Tiger","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://demofortunetiger.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"pt-BR"},{"@type":"Question","@id":"https://demofortunetiger.com/#faq-question-1712082514293","position":1,"url":"https://demofortunetiger.com/#faq-question-1712082514293","name":"What are the bet values in Fortune Tiger?","answerCount":1,"acceptedAnswer":{"@type":"Answer","text":"In Fortune Tiger, the minimum bet amount is R$ 0.40. The maximum bet amount is R$ 500.00.","inLanguage":"pt-BR"},"inLanguage":"pt-BR"},{"@type":"Question","@id":"https://demofortunetiger.com/#faq-question-1712082519200","position":2,"url":"https://demofortunetiger.com/#faq-question-1712082519200","name":"Can I play Fortune Tiger on my phone?","answerCount":1,"acceptedAnswer":{"@type":"Answer","text":"Yes, to bet on Fortune Tiger using your smartphone, just install the app of one of the Casino platforms that offer the slot.","inLanguage":"pt-BR"},"inLanguage":"pt-BR"},{"@type":"Question","@id":"https://demofortunetiger.com/#faq-question-1712082525188","position":3,"url":"https://demofortunetiger.com/#faq-question-1712082525188","name":"What’s the best time to play Fortune Tiger?","answerCount":1,"acceptedAnswer":{"@type":"Answer","text":"Don’t worry, the time of day makes no difference to the winnings you get in Fortune Tiger.","inLanguage":"pt-BR"},"inLanguage":"pt-BR"},{"@type":"Question","@id":"https://demofortunetiger.com/#faq-question-1758284724048","position":4,"url":"https://demofortunetiger.com/#faq-question-1758284724048","name":"Is Fortune Tiger safe?","answerCount":1,"acceptedAnswer":{"@type":"Answer","text":"Yes, as long as it’s played in licensed and regulated online casinos in Brazil. The government maintains an official list of authorized operators on the Ministry of Finance (SPA/MF) website.","inLanguage":"pt-BR"},"inLanguage":"pt-BR"},{"@type":"Question","@id":"https://demofortunetiger.com/#faq-question-1758284747618","position":5,"url":"https://demofortunetiger.com/#faq-question-1758284747618","name":"Do I need to create an account to play demo mode?","answerCount":1,"acceptedAnswer":{"@type":"Answer","text":"In most casinos, no. The demo game can usually be accessed directly, without registration. To play with real money, however, you need to create an account and confirm your identity.","inLanguage":"pt-BR"},"inLanguage":"pt-BR"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="alternate" type="application/rss+xml" title="Feed para Fortune Tiger »" href="https://demofortunetiger.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Fortune Tiger »" href="https://demofortunetiger.com/comments/feed/">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://demofortunetiger.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemofortunetiger.com%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://demofortunetiger.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemofortunetiger.com%2F&format=xml">
+<style id="wp-img-auto-sizes-contain-inline-css" type="text/css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link data-minify="1" rel="stylesheet" id="frame-css" href="./styles/frame-banner.css" type="text/css" media="all">
+<link data-minify="1" rel="stylesheet" id="fancybox-css" href="./styles/fancybox.css" type="text/css" media="all">
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css" type="text/css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id="wp-block-heading-inline-css" type="text/css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://demofortunetiger.com/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-image-inline-css" type="text/css">
+.wp-block-image>a,.wp-block-image>figure>a{display:inline-block}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}@media not (prefers-reduced-motion){.wp-block-image img.hide{visibility:hidden}.wp-block-image img.show{animation:show-content-image .4s}}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull>a,.wp-block-image.alignwide>a{width:100%}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;backdrop-filter:blur(16px) saturate(180%);background-color:#5a5a5a40;border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;width:20px;z-index:100}@media not (prefers-reduced-motion){.wp-lightbox-container button{transition:opacity .2s ease}}.wp-lightbox-container button:focus-visible{outline:3px auto #5a5a5a40;outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:#5a5a5a40;border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .close-button{align-items:center;cursor:pointer;display:flex;justify-content:center;min-height:40px;min-width:40px;padding:0;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .close-button:focus,.wp-lightbox-overlay .close-button:hover,.wp-lightbox-overlay .close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:9999999999}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{visibility:visible}@media not (prefers-reduced-motion){.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes show-content-image{0%{visibility:hidden}99%{visibility:hidden}to{visibility:visible}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+/*# sourceURL=https://demofortunetiger.com/wp-includes/blocks/image/style.min.css */
+</style>
+<style id="wp-block-list-inline-css" type="text/css">
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://demofortunetiger.com/wp-includes/blocks/list/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css" type="text/css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://demofortunetiger.com/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id="wp-block-spacer-inline-css" type="text/css">
+.wp-block-spacer{clear:both}
+/*# sourceURL=https://demofortunetiger.com/wp-includes/blocks/spacer/style.min.css */
+</style>
+<style id="wp-block-table-inline-css" type="text/css">
+.wp-block-table{overflow-x:auto}.wp-block-table table{border-collapse:collapse;width:100%}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{border:1px solid;padding:.5em}.wp-block-table .has-fixed-layout{table-layout:fixed;width:100%}.wp-block-table .has-fixed-layout td,.wp-block-table .has-fixed-layout th{word-break:break-word}.wp-block-table.aligncenter,.wp-block-table.alignleft,.wp-block-table.alignright{display:table;width:auto}.wp-block-table.aligncenter td,.wp-block-table.aligncenter th,.wp-block-table.alignleft td,.wp-block-table.alignleft th,.wp-block-table.alignright td,.wp-block-table.alignright th{word-break:break-word}.wp-block-table .has-subtle-light-gray-background-color{background-color:#f3f4f5}.wp-block-table .has-subtle-pale-green-background-color{background-color:#e9fbe5}.wp-block-table .has-subtle-pale-blue-background-color{background-color:#e7f5fe}.wp-block-table .has-subtle-pale-pink-background-color{background-color:#fcf0ef}.wp-block-table.is-style-stripes{background-color:initial;border-collapse:inherit;border-spacing:0}.wp-block-table.is-style-stripes tbody tr:nth-child(odd){background-color:#f0f0f0}.wp-block-table.is-style-stripes.has-subtle-light-gray-background-color tbody tr:nth-child(odd){background-color:#f3f4f5}.wp-block-table.is-style-stripes.has-subtle-pale-green-background-color tbody tr:nth-child(odd){background-color:#e9fbe5}.wp-block-table.is-style-stripes.has-subtle-pale-blue-background-color tbody tr:nth-child(odd){background-color:#e7f5fe}.wp-block-table.is-style-stripes.has-subtle-pale-pink-background-color tbody tr:nth-child(odd){background-color:#fcf0ef}.wp-block-table.is-style-stripes td,.wp-block-table.is-style-stripes th{border-color:#0000}.wp-block-table.is-style-stripes{border-bottom:1px solid #f0f0f0}.wp-block-table .has-border-color td,.wp-block-table .has-border-color th,.wp-block-table .has-border-color tr,.wp-block-table .has-border-color>*{border-color:inherit}.wp-block-table table[style*=border-top-color] tr:first-child,.wp-block-table table[style*=border-top-color] tr:first-child td,.wp-block-table table[style*=border-top-color] tr:first-child th,.wp-block-table table[style*=border-top-color]>*,.wp-block-table table[style*=border-top-color]>* td,.wp-block-table table[style*=border-top-color]>* th{border-top-color:inherit}.wp-block-table table[style*=border-top-color] tr:not(:first-child){border-top-color:initial}.wp-block-table table[style*=border-right-color] td:last-child,.wp-block-table table[style*=border-right-color] th,.wp-block-table table[style*=border-right-color] tr,.wp-block-table table[style*=border-right-color]>*{border-right-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:last-child,.wp-block-table table[style*=border-bottom-color] tr:last-child td,.wp-block-table table[style*=border-bottom-color] tr:last-child th,.wp-block-table table[style*=border-bottom-color]>*,.wp-block-table table[style*=border-bottom-color]>* td,.wp-block-table table[style*=border-bottom-color]>* th{border-bottom-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:not(:last-child){border-bottom-color:initial}.wp-block-table table[style*=border-left-color] td:first-child,.wp-block-table table[style*=border-left-color] th,.wp-block-table table[style*=border-left-color] tr,.wp-block-table table[style*=border-left-color]>*{border-left-color:inherit}.wp-block-table table[style*=border-style] td,.wp-block-table table[style*=border-style] th,.wp-block-table table[style*=border-style] tr,.wp-block-table table[style*=border-style]>*{border-style:inherit}.wp-block-table table[style*=border-width] td,.wp-block-table table[style*=border-width] th,.wp-block-table table[style*=border-width] tr,.wp-block-table table[style*=border-width]>*{border-style:inherit;border-width:inherit}
+/*# sourceURL=https://demofortunetiger.com/wp-includes/blocks/table/style.min.css */
+</style>
+
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel="stylesheet" id="mesmerize-parent-css" href="./styles/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mesmerize-style-css" href="./styles/style.min.css" type="text/css" media="all">
+<style id="mesmerize-style-inline-css" type="text/css">
+img.logo.dark, img.custom-logo{width:auto;max-height:70px !important;}
+/** cached kirki style */@media screen and (min-width: 768px){.header-homepage{background-position:center center;}.header{background-position:center center;}}.header-homepage:not(.header-slide).color-overlay:before{background:#000000;}.header-homepage:not(.header-slide) .background-overlay,.header-homepage:not(.header-slide).color-overlay::before{opacity:0.7;}.header-homepage-arrow{font-size:calc( 50px * 0.84 );bottom:20px;background:rgba(255,255,255,0);}.header-homepage-arrow > i.fa{width:50px;height:50px;}.header-homepage-arrow > i{color:#ffffff;}.mesmerize-front-page .header-separator .svg-white-bg{fill:#ffffff!important;}.mesmerize-front-page .header-separator path.svg-accent{stroke:#FF9800!important;}.mesmerize-front-page .header-separator svg{height:154px!important;}.header-homepage .header-description-row{padding-top:20%;padding-bottom:20%;}.inner-header-description{padding-top:8%;padding-bottom:8%;}@media screen and (max-width:767px){.header-homepage .header-description-row{padding-top:15%;padding-bottom:15%;}}@media only screen and (min-width: 768px){.header-content .align-holder{width:80%!important;}.inner-header-description{text-align:center!important;}}
+/*# sourceURL=mesmerize-style-inline-css */
+</style>
+<link data-minify="1" rel="stylesheet" id="mesmerize-style-bundle-css" href="./styles/theme.bundle.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mesmerize-fonts-css" href="/css" data-href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CMuli%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7CPlayfair+Display%3A400%2C400italic%2C700%2C700italic&subset=latin%2Clatin-ext&display=swap" type="text/css" media="all">
+<script type="text/javascript" data-minify="1" id="fancybox-js-js" data-rocket-defer="" defer fetchpriority="high" src="./scripts/fancybox.umd.min.js" data-rocket-status="executed"></script>
+<script type="text/javascript" id="jquery-core-js" data-rocket-defer="" defer fetchpriority="high" src="./scripts/jquery.min.js" data-rocket-status="executed"></script>
+<script type="text/javascript" id="jquery-migrate-js" data-rocket-defer="" defer fetchpriority="high" src="./scripts/jquery-migrate.min.js" data-rocket-status="executed"></script>
+<script type="text/javascript" id="jquery-js-after" src="data:text/javascript;base64,d2luZG93LmFkZEV2ZW50TGlzdGVuZXIoJ0RPTUNvbnRlbnRMb2FkZWQnLCBmdW5jdGlvbigpIHsKLyogPCFbQ0RBVEFbICovCiAgICAKICAgICAgICAoZnVuY3Rpb24gKCkgewogICAgICAgICAgICBmdW5jdGlvbiBzZXRIZWFkZXJUb3BTcGFjaW5nKCkgewoKICAgICAgICAgICAgICAgIHNldFRpbWVvdXQoZnVuY3Rpb24oKSB7CiAgICAgICAgICAgICAgICAgIHZhciBoZWFkZXJUb3AgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuaGVhZGVyLXRvcCcpOwogICAgICAgICAgICAgICAgICB2YXIgaGVhZGVycyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoJy5oZWFkZXItd3JhcHBlciAuaGVhZGVyLC5oZWFkZXItd3JhcHBlciAuaGVhZGVyLWhvbWVwYWdlJyk7CgogICAgICAgICAgICAgICAgICBmb3IgKHZhciBpID0gMDsgaSA8IGhlYWRlcnMubGVuZ3RoOyBpKyspIHsKICAgICAgICAgICAgICAgICAgICAgIHZhciBpdGVtID0gaGVhZGVyc1tpXTsKICAgICAgICAgICAgICAgICAgICAgIGl0ZW0uc3R5bGUucGFkZGluZ1RvcCA9IGhlYWRlclRvcC5nZXRCb3VuZGluZ0NsaWVudFJlY3QoKS5oZWlnaHQgKyAicHgiOwogICAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgICAgIHZhciBsYW5ndWFnZVN3aXRjaGVyID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignLm1lc21lcml6ZS1sYW5ndWFnZS1zd2l0Y2hlcicpOwoKICAgICAgICAgICAgICAgICAgICBpZihsYW5ndWFnZVN3aXRjaGVyKXsKICAgICAgICAgICAgICAgICAgICAgICAgbGFuZ3VhZ2VTd2l0Y2hlci5zdHlsZS50b3AgPSAiY2FsYyggIiArICBoZWFkZXJUb3AuZ2V0Qm91bmRpbmdDbGllbnRSZWN0KCkuaGVpZ2h0ICsgInB4ICsgMXJlbSkiIDsKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICB9LCAxMDApOwoKICAgICAgICAgICAgIAogICAgICAgICAgICB9CgogICAgICAgICAgICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcigncmVzaXplJywgc2V0SGVhZGVyVG9wU3BhY2luZyk7CiAgICAgICAgICAgIHdpbmRvdy5tZXNtZXJpemVTZXRIZWFkZXJUb3BTcGFjaW5nID0gc2V0SGVhZGVyVG9wU3BhY2luZwogICAgICAgICAgICBtZXNtZXJpemVEb21SZWFkeShzZXRIZWFkZXJUb3BTcGFjaW5nKTsKICAgICAgICB9KSgpOwogICAgCiAgICAKLy8jIHNvdXJjZVVSTD1qcXVlcnktanMtYWZ0ZXIKLyogXV0+ICovCn0pOw==" data-rocket-status="executed">window.addEventListener('DOMContentLoaded', function() {
+/* <![CDATA[ */
+    
+        (function () {
+            function setHeaderTopSpacing() {
+
+                setTimeout(function() {
+                  var headerTop = document.querySelector('.header-top');
+                  var headers = document.querySelectorAll('.header-wrapper .header,.header-wrapper .header-homepage');
+
+                  for (var i = 0; i < headers.length; i++) {
+                      var item = headers[i];
+                      item.style.paddingTop = headerTop.getBoundingClientRect().height + "px";
+                  }
+
+                    var languageSwitcher = document.querySelector('.mesmerize-language-switcher');
+
+                    if(languageSwitcher){
+                        languageSwitcher.style.top = "calc( " +  headerTop.getBoundingClientRect().height + "px + 1rem)" ;
+                    }
+                    
+                }, 100);
+
+             
+            }
+
+            window.addEventListener('resize', setHeaderTopSpacing);
+            window.mesmerizeSetHeaderTopSpacing = setHeaderTopSpacing
+            mesmerizeDomReady(setHeaderTopSpacing);
+        })();
+    
+    
+//# sourceURL=jquery-js-after
+/* ]]> */
+});</script>
+<link rel="https://api.w.org/" href="https://demofortunetiger.com/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://demofortunetiger.com/wp-json/wp/v2/pages/14"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demofortunetiger.com/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.9.4">
+<link rel="shortlink" href="https://demofortunetiger.com/">
+<!-- Google tag (gtag.js) -->
+<script async fetchpriority="high" src="/gtag/js" data-rocket-status="executed"></script>
+<script src="data:text/javascript;base64,CiAgd2luZG93LmRhdGFMYXllciA9IHdpbmRvdy5kYXRhTGF5ZXIgfHwgW107CiAgZnVuY3Rpb24gZ3RhZygpe2RhdGFMYXllci5wdXNoKGFyZ3VtZW50cyk7fQogIGd0YWcoJ2pzJywgbmV3IERhdGUoKSk7CgogIGd0YWcoJ2NvbmZpZycsICdHLTRRSktGN0ozTTUnKTsK" data-rocket-status="executed">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4QJKF7J3M5');
+</script>
+    
+    <style type="text/css" data-name="custom-mobile-image-position">
+        @media screen and (max-width: 767px) {
+            /*Custom mobile position*/
+        .header-homepage {
+            background-position: 50% 0px;
+        }
+        }
+    </style>
+
+    
+        <script type="text/javascript" data-name="async-styles" src="data:text/javascript;base64,CiAgICAgICAgKGZ1bmN0aW9uICgpIHsKICAgICAgICAgICAgdmFyIGxpbmtzID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnbGlua1tkYXRhLWhyZWZdJyk7CiAgICAgICAgICAgIGZvciAodmFyIGkgPSAwOyBpIDwgbGlua3MubGVuZ3RoOyBpKyspIHsKICAgICAgICAgICAgICAgIHZhciBpdGVtID0gbGlua3NbaV07CiAgICAgICAgICAgICAgICBpdGVtLmhyZWYgPSBpdGVtLmdldEF0dHJpYnV0ZSgnZGF0YS1ocmVmJykKICAgICAgICAgICAgfQogICAgICAgIH0pKCk7CiAgICA=" data-rocket-status="executed">
+        (function () {
+            var links = document.querySelectorAll('link[data-href]');
+            for (var i = 0; i < links.length; i++) {
+                var item = links[i];
+                item.href = item.getAttribute('data-href')
+            }
+        })();
+    </script>
+	<link rel="icon" href="https://demofortunetiger.com/wp-content/uploads/2024/03/cropped-Game-Banner-2-32x32.png" sizes="32x32">
+<link rel="icon" href="https://demofortunetiger.com/wp-content/uploads/2024/03/cropped-Game-Banner-2-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://demofortunetiger.com/wp-content/uploads/2024/03/cropped-Game-Banner-2-180x180.png">
+<meta name="msapplication-TileImage" content="https://demofortunetiger.com/wp-content/uploads/2024/03/cropped-Game-Banner-2-270x270.png">
+		<style type="text/css" id="wp-custom-css">
+			.fancybox__toolbar {
+	justify-content: flex-end !important;
+}		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>    <style data-name="background-content-colors">
+        .mesmerize-inner-page .page-content,
+        .mesmerize-inner-page .content,
+        .mesmerize-front-page.mesmerize-content-padding .page-content {
+            background-color: #F5FAFD;
+        }
+    </style>
+    <style id="core-block-supports-inline-css" type="text/css">
+.wp-elements-063cc2c86a50fd9f1f6b79852de28065 a:where(:not(.wp-element-button)){color:#c6c6c6;}
+/*# sourceURL=core-block-supports-inline-css */
+</style>
+
+<style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle"></style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = []; const rocket_excluded_pairs = [];</script><meta name="generator" content="WP Rocket 3.19.4" data-wpr-features="wpr_lazyload_css_bg_img wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_preconnect_external_domains wpr_auto_preload_fonts wpr_oci wpr_image_dimensions wpr_minify_css wpr_preload_links wpr_host_fonts_locally wpr_desktop"><link rel="prefetch" href="https://demofortunetiger.com/h992/"></head>
+
+<body class="home wp-singular page-template-default page page-id-14 wp-theme-mesmerize wp-child-theme-highlight mesmerize-front-page mesmerize-content-padding hide-scrollbar">
+<style>
+.screen-reader-text[href="#page-content"]:focus {
+   background-color: #f1f1f1;
+   border-radius: 3px;
+   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+   clip: auto !important;
+   clip-path: none;
+   color: #21759b;
+
+}
+</style>
+<a class="skip-link screen-reader-text" href="#page-content">Skip to content</a>
+<div id="page-top" class="header-top homepage">
+		<div class="navigation-bar homepage">
+    <div class="navigation-wrapper">
+    	<div class="row basis-auto">
+	        <div class="logo_col col-xs col-sm-fit">
+	            <a class="text-logo" data-type="group" data-dynamic-mod="true" href="https://demofortunetiger.com/" data-wpel-link="internal">Fortune<span style="font-weight: 300;" class="span12"> Tiger</span></a>	        </div>
+	        <div class="main_menu_col col-xs">
+	            <div id="mainmenu_container" class="row"><ul id="main_menu" class="active-line-bottom main-menu dropdown-menu"><li id="menu-item-35212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-14 menu-item-35212"><a href="https://demofortunetiger.com/" aria-current="page" data-wpel-link="internal">Demo Free</a></li>
+<li id="menu-item-35876" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-35876 current-menu-item"><a href="https://demofortunetiger.com/#estrategias" aria-current="page" data-wpel-link="internal">Strategy</a></li>
+<li id="menu-item-38430" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-38430"><a href="./pages/noticias.html" data-wpel-link="internal">Notícias</a></li>
+</ul></div>    <a href="#" data-component="offcanvas" data-target="#offcanvas-wrapper" data-direction="right" data-width="300px" data-push="false" data-loaded="true">
+        <div class="bubble"></div>
+        <i class="fa fa-bars"></i>
+    </a>
+    
+    	        </div>
+	    </div>
+    </div>
+</div>
+</div>
+
+
+<div id="page" class="site">
+
+	<div class="header-wrapper">
+   <div class="header-homepage color-overlay header-full-height" style="background-image: url(&quot;./images/banner3.jpg&quot;); background-color: rgb(194, 199, 255); padding-top: 78.625px;" data-parallax-depth="20">
+                  
+    <div class="header-description gridContainer content-on-center">
+        <div class="row header-description-row middle-sm">
+    <div class="header-content header-content-centered col-md col-xs-12">
+        <div class="align-holder center">
+            <h1 class="hero-title">Fortune Tiger Demo</h1><p class="header-subtitle">Play the Fortune Tiger demo for free and experience all the excitement without risks — no registration required</p><div data-dynamic-mod-container="" class="header-buttons-wrapper"><a class="button big color1 round" target="_self" href="./pages/h992.html" data-wpel-link="internal">CASSINO ONLINE</a><a class="button big color-white round outline" target="_self" href="https://demofortunetiger.com/#demo" data-wpel-link="internal">Jogar de graça</a></div>        </div>
+    </div>
+</div>
+    </div>
+    
+        <script src="data:text/javascript;base64,CgkJaWYgKHdpbmRvdy5tZXNtZXJpemVTZXRIZWFkZXJUb3BTcGFjaW5nKSB7CgkJCXdpbmRvdy5tZXNtZXJpemVTZXRIZWFkZXJUb3BTcGFjaW5nKCk7CgkJfQogICAg" data-rocket-status="executed">
+		if (window.mesmerizeSetHeaderTopSpacing) {
+			window.mesmerizeSetHeaderTopSpacing();
+		}
+    </script>
+    
+      <div class="header-separator header-separator-bottom"><svg class="mesmerize" preserveAspectRatio="none" width="1000" height="100" viewBox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
+
+    <g fill="none">
+        <path class="svg-white-bg" d="M-1.23 78.87c186.267-24.436 314.878-36.485 385.833-36.147 106.432.506 167.531 21.933 236.417 21.933s183.312-50.088 254.721-55.62c47.606-3.688 89.283 2.613 125.03 18.901v72.063l-1002 1.278v-22.408z" fill="#000" />
+        <path class="svg-accent" d="M-1.23 87.791c171.627-34.447 300.773-52.658 387.438-54.634 129.998-2.964 166.902 40.422 235.909 40.422s175.29-63.463 246.825-68.994c47.69-3.687 91.633 10.063 131.828 41.25" stroke="#50E3C2" stroke-width="1" />
+    </g>
+</svg></div>              <div class="header-homepage-arrow-c">
+            <span class="header-homepage-arrow move-down-bounce"> <i class="fa arrow fa-angle-down" aria-hidden="true"></i>
+            </span>
+        </div>
+           </div>
+</div>
+
+    <div id="page-content" class="page-content">
+        <div class="gridContainer content">
+            <div id="post-14" class="post-14 page type-page status-publish hentry">
+  <div>
+   
+<div style="height:50px" aria-hidden="true" id="demo" class="wp-block-spacer"></div>
+
+
+<div class="banner-container banner-popup">
+                <img width="1400" height="747" decoding="async" class="banner-img entered lazyloaded" src="./images/demo.jpg" data-lazy-src="https://demofortunetiger.com/wp-content/uploads/2024/04/demo.jpg" data-ll-status="loaded"><noscript><img width="1400" height="747" decoding="async" class="banner-img" src="./images/demo.jpg"></noscript>
+                <div class="buttons-container">
+                    <button data-src="https://public.pg-demo.com/demo/?gi=126&lang=en" data-width="1280" data-height="680" data-type="iframe" class="slaunch-button sl-bounce sl-button-solid sl-play-for-real" data-fancybox=""><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>Jogar de Graça</button>
+                    <a href="./pages/h992.html" target="_blank" class="slaunch-button slaunch-game sl-bounce2" data-wpel-link="internal"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                  </svg>Jogue e ganhe dinheiro real</a>
+                </div>
+            </div>
+
+
+
+<p class="has-text-color has-link-color has-small-font-size wp-elements-063cc2c86a50fd9f1f6b79852de28065" style="color:#c6c6c6">*18+ advertising. See the terms on the operator’s website. Play responsibly</p>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p></p>
+
+
+
+<h2 class="wp-block-heading">What is the demo mode for</h2>
+
+
+
+<p>In demo mode, you have the chance to analyze the game dynamics up close, test strategies, and understand how the mechanics grab attention. Even without betting real money, the thrill remains — each spin brings that sense of anticipation that keeps millions of players connected.</p>
+
+
+
+<p>You will get:</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Game Familiarization:</strong> The demo mode allows players to get familiar with the rules, mechanics, and special features of the game before deciding to play with real money. This is especially useful for beginners.</li>
+
+
+
+<li><strong>No Financial Risks:</strong> The main advantage of demo mode is the absence of financial risks. Players can enjoy the excitement of Fortune Tiger without compromising their budget.</li>
+
+
+
+<li><strong>Strategy Testing:</strong> More experienced players can use demo mode to test different strategies without the fear of losing money.</li>
+</ol>
+
+
+
+<p><em>But:</em></p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>No Real Winnings:</strong> The main drawback of demo mode is that winnings are only virtual. Players cannot withdraw the funds accumulated during test play.</li>
+
+
+
+<li><strong>Limited Thrill:</strong> The thrill of winning real money adds an extra dimension to the game. In demo mode, this thrill is absent, which may make the experience less exciting for some players.</li>
+</ol>
+
+
+
+<h2 class="wp-block-heading">Where Can I Play the Demo Version?</h2>
+
+
+
+<p>The demo version of Fortune Tiger is available here on our site and also in several licensed online casinos that offer the provider’s games. The best part is that, most of the time, you can access demo mode directly on the site, without needing to create an account or fill out registration — just click and start spinning.</p>
+
+
+
+<p>This makes the experience super convenient for those who want to try out the game mechanics without any financial commitment. You can explore the symbols, test strategies, and feel the vibe of Brazil’s most famous slot completely free.</p>
+
+
+
+<p>In short: Fortune Tiger’s demo mode is perfect to get familiar with the game without risks. But remember — the true casino adrenaline only shows up when real bets come into play. It’s up to each player to decide the right time to make that transition.</p>
+
+
+
+<h2 class="wp-block-heading">Playing Fortune Tiger with real money – the best platforms</h2>
+
+
+
+<p>Before talking about the platforms themselves, it’s important to understand the legal scenario in Brazil, because since January 1, 2025 only houses that have received an official government license can operate legitimately.</p>
+
+
+
+<ul class="wp-block-list">
+<li>The starting point was Law nº 14.790/2023, which paved the way for the new licensing system.</li>
+
+
+
+<li>The always updated list of authorized operators is available on the official website of the <a href="https://www.gov.br/fazenda/pt-br/composicao/orgaos/secretaria-de-premios-e-apostas/lista-de-empresas" data-wpel-link="external" target="_self" rel="nofollow">Ministry of Finance – SPA/MF</a>.</li>
+</ul>
+
+
+
+<p>In other words: if you want to play Fortune Tiger with real money, always choose one of these licensed platforms — it guarantees security, reliable payments, and fair play.</p>
+
+
+
+<h3 class="wp-block-heading">Criteria we use to recommend a casino</h3>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Valid license</strong> — Regulated under Brazilian / federal laws, or operating under a recognized license;</li>
+
+
+
+<li><strong>Security and fairness</strong> — Games tested (RNG, independent audits), protection of personal data;</li>
+
+
+
+<li><strong>Reliable deposit and withdrawal methods</strong> — Preference for fast methods like PIX, transparency in withdrawal times;</li>
+
+
+
+<li><strong>Player support &amp; responsible gaming</strong> — Support in Portuguese, deposit limits, self-exclusion, etc.;</li>
+
+
+
+<li><strong>Variety of games + good conditions</strong> — besides <em>Fortune Tiger</em>, there should be other slots, promotions, tournaments, etc.</li>
+</ol>
+
+
+
+<h2 class="wp-block-heading">Gameplay and mechanics of Fortune Tiger</h2>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>Year</td><td>2022</td></tr><tr><td>Developer</td><td>PG Soft</td></tr><tr><td>Game type</td><td>Slots</td></tr><tr><td>Main features</td><td>Lucky Tiger Bonus, turbo bets, WILD symbols, bet history, auto feature</td></tr><tr><td>Volatility</td><td>Medium</td></tr><tr><td>RTP value</td><td>96.81%</td></tr><tr><td>Min./max. bet</td><td>R$ 0.40 / R$ 500.00</td></tr><tr><td>Maximum win</td><td>2,500x&#160;</td></tr><tr><td>Own app</td><td>Not available.</td></tr><tr><td>Demo version</td><td>Yes (depending on the platform)</td></tr></tbody></table></figure>
+
+
+
+<p>In general, Fortune Tiger Slots is divided into 3 rows and 3 columns of symbols (a 3×3 format). On the game panel, you can find both the basic symbols and the WILDs – which unlock the Lucky Tiger feature.</p>
+
+
+
+<p>In this slot interface, you’ll also find auto bet tools, a Bet History, and the Turbo feature. In the next sections, we’ll go deeper into each of these Fortune Tiger details:</p>
+
+
+
+<h3 class="wp-block-heading">Paylines</h3>
+
+
+
+<p>To win in Fortune Tiger, you must align the game’s symbols on specific paylines. Each type of symbol brings a different payout value – from 3x the bet amount up to 250x.</p>
+
+
+
+<p>The game offers a very simple payout structure, with straight and diagonal lines. Only the highest win is paid on bet lines. Check the image below for the ways to win in Fortune Tiger:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img fetchpriority="high" decoding="async" width="690" height="306" alt="" class="wp-image-35489 entered exited" data-lazy-srcset="https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-2.jpg 690w, https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-2-300x133.jpg 300w" data-lazy-sizes="(max-width: 690px) 100vw, 690px" data-lazy-src="https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-2.jpg" src="./images/data-image_svg-xml,-3Csvg-20xmlns-'http-_www.w3.org_2000_svg'-20viewBox-'0-200-20690-20306'-3E-3C_svg-3E.bin"><noscript><img fetchpriority="high" decoding="async" width="690" height="306" src="./images/fortune-tiger-2.jpg" alt="" class="wp-image-35489" srcset="https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-2.jpg 690w, https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-2-300x133.jpg 300w" sizes="(max-width: 690px) 100vw, 690px"></noscript></figure>
+</div>
+
+
+<h3 class="wp-block-heading">Basic symbols of Fortune Tiger</h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="692" height="450" alt="" class="wp-image-35490 entered exited" data-lazy-srcset="https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-3.jpg 692w, https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-3-300x195.jpg 300w" data-lazy-sizes="(max-width: 692px) 100vw, 692px" data-lazy-src="https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-3.jpg" src="./images/data-image_svg-xml,-3Csvg-20xmlns-'http-_www.w3.org_2000_svg'-20viewBox-'0-200-20692-20450'-3E-3C_svg-3E.bin"><noscript><img decoding="async" width="692" height="450" src="./images/fortune-tiger-3.jpg" alt="" class="wp-image-35490" srcset="https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-3.jpg 692w, https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-3-300x195.jpg 300w" sizes="(max-width: 692px) 100vw, 692px"></noscript></figure>
+</div>
+
+
+<p>The entire interface of Fortune Tiger, including its symbols, is inspired by Chinese culture. In order of highest payout, these are the slot’s symbols: the tangerine; fireworks; red envelopes; coin purse; jade ornament; gold bar; and finally the WILD symbol.</p>
+
+
+
+<p>When playing the slot, with the soundtrack and basic symbols, you’ll be immersed in the world of Chinese folklore. The little tiger that gives the game its name is inspired by the country’s folklore, being one of the main animals of the oriental horoscope.</p>
+
+
+
+<h3 class="wp-block-heading">Symbol values&#160;</h3>
+
+
+
+<p>Before betting on Fortune Tiger, it’s important to pay attention to the payout each symbol offers. Divided between the basic symbols and the WILD, the game’s payout is based on the following table:&#160;</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Fortune Tiger Symbol</strong></td><td><strong>Payout value</strong></td></tr><tr><td>Tangerine</td><td>3</td></tr><tr><td>Fireworks</td><td>5</td></tr><tr><td>Red envelopes</td><td>8</td></tr><tr><td>Coin purse</td><td>10</td></tr><tr><td>Jade ornament</td><td>25</td></tr><tr><td>Gold bar</td><td>100</td></tr><tr><td>WILD symbol</td><td>250</td></tr></tbody></table></figure>
+
+
+
+<h3 class="wp-block-heading">Wild symbols</h3>
+
+
+
+<p>The WILD symbols are one of the most important aspects of Fortune Tiger. In this slot, WILD symbols can substitute all other game symbols. The fixed payout of WILDs is also one of the highest in the game – paying 250x.</p>
+
+
+
+<p>Therefore, when you generate a WILD, you get a joker symbol that will take the place of any other. This symbol is very useful for filling all paylines, activating the x10 Multiplier bonus.</p>
+
+
+
+<h3 class="wp-block-heading">Lucky Tiger Bonus</h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="705" height="406" alt="" class="wp-image-35491 entered exited" data-lazy-srcset="https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-4.jpg 705w, https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-4-300x173.jpg 300w" data-lazy-sizes="(max-width: 705px) 100vw, 705px" data-lazy-src="https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-4.jpg" src="./images/data-image_svg-xml,-3Csvg-20xmlns-'http-_www.w3.org_2000_svg'-20viewBox-'0-200-20705-20406'-3E-3C_svg-3E.bin"><noscript><img decoding="async" width="705" height="406" src="./images/fortune-tiger-4.jpg" alt="" class="wp-image-35491" srcset="https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-4.jpg 705w, https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-4-300x173.jpg 300w" sizes="(max-width: 705px) 100vw, 705px"></noscript></figure>
+</div>
+
+
+<p>The Lucky Tiger Bonus is one of the most surprising aspects of Fortune Tiger, as it can be activated at any moment during the spin of the reels. When triggered, this bonus selects one of the game’s basic symbols, causing the machine to generate only that symbol, blank spaces, and WILDs.</p>
+
+
+
+<p>The Lucky Tiger Bonus remains active until the machine stops generating the chosen basic symbol or a WILD. At that point, the bonus ends and all winnings are paid out.</p>
+
+
+
+<h3 class="wp-block-heading">x10 Multipliers</h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="678" height="392" alt="" class="wp-image-35492 entered exited" data-lazy-srcset="https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-5.jpg 678w, https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-5-300x173.jpg 300w" data-lazy-sizes="(max-width: 678px) 100vw, 678px" data-lazy-src="https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-5.jpg" src="./images/data-image_svg-xml,-3Csvg-20xmlns-'http-_www.w3.org_2000_svg'-20viewBox-'0-200-20678-20392'-3E-3C_svg-3E.bin"><noscript><img decoding="async" width="678" height="392" src="./images/fortune-tiger-5.jpg" alt="" class="wp-image-35492" srcset="https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-5.jpg 678w, https://demofortunetiger.com/wp-content/uploads/2024/04/fortune-tiger-5-300x173.jpg 300w" sizes="(max-width: 678px) 100vw, 678px"></noscript></figure>
+</div>
+
+
+<p>Another very attractive feature in Fortune Tiger are the x10 multipliers. This feature is activated when you fill all 9 slots with a single symbol – WILDs can also be used as jokers.</p>
+
+
+
+<p>By filling all lines, Fortune Tiger will multiply your winnings up to 10x. If you’re lucky enough to spin only WILDs, you win up to 2,500x the bet amount, which is the slot’s maximum win.</p>
+
+
+
+<h2 class="wp-block-heading" id="estrategias">Betting strategies in Fortune Tiger</h2>
+
+
+
+<p>Fortune Tiger, like every slot, is a game based on luck. There are no secret strategies that guarantee wins — each spin is independent and defined by a random number generator (RNG).</p>
+
+
+
+<p>What players can do is adopt conscious practices to better enjoy the experience and control risks:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Bankroll management — define how much you intend to spend, set loss and win limits, and never risk your entire balance in one session.</li>
+
+
+
+<li>Smaller bets — since Fortune Tiger has medium volatility, betting small amounts allows for more spins and increases the chance of triggering special features.</li>
+
+
+
+<li>Strategic breaks — both after losses and after big wins, it’s important to take breaks to maintain control and avoid impulsive decisions.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading">What is RTP</h3>
+
+
+
+<p>Fortune Tiger’s RTP (Return to Player) is 96.81%. This means that, in theory, for every R$ 100.00 wagered, the game returns R$ 96.81 to players in the long run, while R$ 3.19 remains as the house margin.</p>
+
+
+
+<p>It’s essential to understand that:</p>
+
+
+
+<ul class="wp-block-list">
+<li>The RTP is a statistical average, calculated over millions of spins.</li>
+
+
+
+<li>In the short term, results can vary a lot.</li>
+
+
+
+<li>RTP mainly serves to compare games: the higher it is, the fairer the game tends to be.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading">And the volatility</h3>
+
+
+
+<p>Volatility shows how prizes appear:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Low: small but frequent wins.</li>
+
+
+
+<li>High: big wins, but rare.</li>
+
+
+
+<li>Medium: balance between frequency and value.</li>
+</ul>
+
+
+
+<p>Fortune Tiger has medium volatility, offering a balanced experience, with reasonably frequent prizes and, occasionally, bigger wins.</p>
+
+
+
+<p>In summary, Fortune Tiger is a game of luck, but knowing its RTP of 96.81% and medium volatility helps you play with more awareness and realistic expectations.</p>
+
+
+
+<h2 class="wp-block-heading">How to check if you are playing the original Fortune Tiger version</h2>
+
+
+
+<p>PG Soft cares about player security and included in its slots, like <em>Fortune Tiger</em>, a feature to confirm the <strong>authenticity of the game</strong>.</p>
+
+
+
+<ul class="wp-block-list">
+<li>When opening the game in an online casino, you can click the <strong>information or settings icon</strong>.</li>
+
+
+
+<li>There you’ll find the option <strong>“Originality Check”</strong>.</li>
+
+
+
+<li>When you click, the system connects directly with PG Soft’s servers and shows a message confirming whether that game is the official licensed version.</li>
+</ul>
+
+
+
+<p>This feature ensures you are not playing a pirated or manipulated version of the slot. Only casinos authorized by PG Soft offer this active verification function.</p>
+
+
+
+<p>In summary: always use this tool when opening <em>Fortune Tiger</em>. If the function isn’t available or doesn’t confirm authenticity, be suspicious of the platform.</p>
+
+
+
+<h2 class="wp-block-heading">FAQ – Frequently Asked Questions</h2>
+
+
+
+<div class="schema-faq wp-block-yoast-faq-block"><div class="schema-faq-section" id="faq-question-1712082514293"><strong class="schema-faq-question"><strong>What are the bet values in Fortune Tiger?</strong></strong> <p class="schema-faq-answer">In Fortune Tiger, the minimum bet amount is R$ 0.40. The maximum bet amount is R$ 500.00.</p> </div> <div class="schema-faq-section" id="faq-question-1712082519200"><strong class="schema-faq-question"><strong>Can I play Fortune Tiger on my phone?</strong></strong> <p class="schema-faq-answer">Yes, to bet on Fortune Tiger using your smartphone, just install the app of one of the Casino platforms that offer the slot.</p> </div> <div class="schema-faq-section" id="faq-question-1712082525188"><strong class="schema-faq-question"><strong>What’s the best time to play Fortune Tiger?</strong></strong> <p class="schema-faq-answer">Don’t worry, the time of day makes no difference to the winnings you get in Fortune Tiger.</p> </div> <div class="schema-faq-section" id="faq-question-1758284724048"><strong class="schema-faq-question">Is Fortune Tiger safe?</strong> <p class="schema-faq-answer">Yes, as long as it’s played in licensed and regulated online casinos in Brazil. The government maintains an official list of authorized operators on the Ministry of Finance (SPA/MF) website.</p> </div> <div class="schema-faq-section" id="faq-question-1758284747618"><strong class="schema-faq-question">Do I need to create an account to play demo mode?</strong> <p class="schema-faq-answer">In most casinos, no. The demo game can usually be accessed directly, without registration. To play with real money, however, you need to create an account and confirm your identity.</p> </div> </div>
+
+
+
+<p></p>
+  </div>
+    </div>
+        </div>
+    </div>
+
+<div class="footer footer-content-lists footer-border-accent">
+    <div class="footer-content">
+        <div class="gridContainer">
+            <div class="row">
+                <div class="col-sm-8 flexbox">
+                    <div class="row widgets-row">
+                        <div class="col-sm-4">
+                            <div id="block-8" class="widget widget_block widget_text">
+<p>Contate-nos<br>contato@demofortunetiger.com</p>
+</div>                        </div>
+                        <div class="col-sm-4">
+                                                    </div>
+                        <div class="col-sm-4">
+                                                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 flexbox center-xs middle-xs content-section-spacing-medium footer-bg-accent">
+                  <div>
+                    <div class="footer-logo space-bottom-small">
+                    </div>
+                    <p class="copyright">©&#160;&#160;2026&#160;Fortune Tiger.&#160;</p>                        <div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
+        
+    </div>
+
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	</div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/highlight/*","/wp-content/themes/mesmerize/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+    <script src="data:text/javascript;base64,CiAgICAgICAgLyh0cmlkZW50fG1zaWUpL2kudGVzdChuYXZpZ2F0b3IudXNlckFnZW50KSAmJiBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCAmJiB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lciAmJiB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcigiaGFzaGNoYW5nZSIsIGZ1bmN0aW9uICgpIHsKICAgICAgICAgICAgdmFyIHQsIGUgPSBsb2NhdGlvbi5oYXNoLnN1YnN0cmluZygxKTsKICAgICAgICAgICAgL15bQS16MC05Xy1dKyQvLnRlc3QoZSkgJiYgKHQgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChlKSkgJiYgKC9eKD86YXxzZWxlY3R8aW5wdXR8YnV0dG9ufHRleHRhcmVhKSQvaS50ZXN0KHQudGFnTmFtZSkgfHwgKHQudGFiSW5kZXggPSAtMSksIHQuZm9jdXMoKSkKICAgICAgICB9LCAhMSk7CiAgICA=" data-rocket-status="executed">
+        /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () {
+            var t, e = location.hash.substring(1);
+            /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus())
+        }, !1);
+    </script>
+	<script type="text/javascript" data-minify="1" id="frame-js-js" data-rocket-defer="" defer fetchpriority="high" src="./scripts/frame-banner.js" data-rocket-status="executed"></script>
+<script type="text/javascript" id="rocket-browser-checker-js-after" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwoidXNlIHN0cmljdCI7dmFyIF9jcmVhdGVDbGFzcz1mdW5jdGlvbigpe2Z1bmN0aW9uIGRlZmluZVByb3BlcnRpZXModGFyZ2V0LHByb3BzKXtmb3IodmFyIGk9MDtpPHByb3BzLmxlbmd0aDtpKyspe3ZhciBkZXNjcmlwdG9yPXByb3BzW2ldO2Rlc2NyaXB0b3IuZW51bWVyYWJsZT1kZXNjcmlwdG9yLmVudW1lcmFibGV8fCExLGRlc2NyaXB0b3IuY29uZmlndXJhYmxlPSEwLCJ2YWx1ZSJpbiBkZXNjcmlwdG9yJiYoZGVzY3JpcHRvci53cml0YWJsZT0hMCksT2JqZWN0LmRlZmluZVByb3BlcnR5KHRhcmdldCxkZXNjcmlwdG9yLmtleSxkZXNjcmlwdG9yKX19cmV0dXJuIGZ1bmN0aW9uKENvbnN0cnVjdG9yLHByb3RvUHJvcHMsc3RhdGljUHJvcHMpe3JldHVybiBwcm90b1Byb3BzJiZkZWZpbmVQcm9wZXJ0aWVzKENvbnN0cnVjdG9yLnByb3RvdHlwZSxwcm90b1Byb3BzKSxzdGF0aWNQcm9wcyYmZGVmaW5lUHJvcGVydGllcyhDb25zdHJ1Y3RvcixzdGF0aWNQcm9wcyksQ29uc3RydWN0b3J9fSgpO2Z1bmN0aW9uIF9jbGFzc0NhbGxDaGVjayhpbnN0YW5jZSxDb25zdHJ1Y3Rvcil7aWYoIShpbnN0YW5jZSBpbnN0YW5jZW9mIENvbnN0cnVjdG9yKSl0aHJvdyBuZXcgVHlwZUVycm9yKCJDYW5ub3QgY2FsbCBhIGNsYXNzIGFzIGEgZnVuY3Rpb24iKX12YXIgUm9ja2V0QnJvd3NlckNvbXBhdGliaWxpdHlDaGVja2VyPWZ1bmN0aW9uKCl7ZnVuY3Rpb24gUm9ja2V0QnJvd3NlckNvbXBhdGliaWxpdHlDaGVja2VyKG9wdGlvbnMpe19jbGFzc0NhbGxDaGVjayh0aGlzLFJvY2tldEJyb3dzZXJDb21wYXRpYmlsaXR5Q2hlY2tlciksdGhpcy5wYXNzaXZlU3VwcG9ydGVkPSExLHRoaXMuX2NoZWNrUGFzc2l2ZU9wdGlvbih0aGlzKSx0aGlzLm9wdGlvbnM9ISF0aGlzLnBhc3NpdmVTdXBwb3J0ZWQmJm9wdGlvbnN9cmV0dXJuIF9jcmVhdGVDbGFzcyhSb2NrZXRCcm93c2VyQ29tcGF0aWJpbGl0eUNoZWNrZXIsW3trZXk6Il9jaGVja1Bhc3NpdmVPcHRpb24iLHZhbHVlOmZ1bmN0aW9uKHNlbGYpe3RyeXt2YXIgb3B0aW9ucz17Z2V0IHBhc3NpdmUoKXtyZXR1cm4hKHNlbGYucGFzc2l2ZVN1cHBvcnRlZD0hMCl9fTt3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcigidGVzdCIsbnVsbCxvcHRpb25zKSx3aW5kb3cucmVtb3ZlRXZlbnRMaXN0ZW5lcigidGVzdCIsbnVsbCxvcHRpb25zKX1jYXRjaChlcnIpe3NlbGYucGFzc2l2ZVN1cHBvcnRlZD0hMX19fSx7a2V5OiJpbml0UmVxdWVzdElkbGVDYWxsYmFjayIsdmFsdWU6ZnVuY3Rpb24oKXshMSBpbiB3aW5kb3cmJih3aW5kb3cucmVxdWVzdElkbGVDYWxsYmFjaz1mdW5jdGlvbihjYil7dmFyIHN0YXJ0PURhdGUubm93KCk7cmV0dXJuIHNldFRpbWVvdXQoZnVuY3Rpb24oKXtjYih7ZGlkVGltZW91dDohMSx0aW1lUmVtYWluaW5nOmZ1bmN0aW9uKCl7cmV0dXJuIE1hdGgubWF4KDAsNTAtKERhdGUubm93KCktc3RhcnQpKX19KX0sMSl9KSwhMSBpbiB3aW5kb3cmJih3aW5kb3cuY2FuY2VsSWRsZUNhbGxiYWNrPWZ1bmN0aW9uKGlkKXtyZXR1cm4gY2xlYXJUaW1lb3V0KGlkKX0pfX0se2tleToiaXNEYXRhU2F2ZXJNb2RlT24iLHZhbHVlOmZ1bmN0aW9uKCl7cmV0dXJuImNvbm5lY3Rpb24iaW4gbmF2aWdhdG9yJiYhMD09PW5hdmlnYXRvci5jb25uZWN0aW9uLnNhdmVEYXRhfX0se2tleToic3VwcG9ydHNMaW5rUHJlZmV0Y2giLHZhbHVlOmZ1bmN0aW9uKCl7dmFyIGVsZW09ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgibGluayIpO3JldHVybiBlbGVtLnJlbExpc3QmJmVsZW0ucmVsTGlzdC5zdXBwb3J0cyYmZWxlbS5yZWxMaXN0LnN1cHBvcnRzKCJwcmVmZXRjaCIpJiZ3aW5kb3cuSW50ZXJzZWN0aW9uT2JzZXJ2ZXImJiJpc0ludGVyc2VjdGluZyJpbiBJbnRlcnNlY3Rpb25PYnNlcnZlckVudHJ5LnByb3RvdHlwZX19LHtrZXk6ImlzU2xvd0Nvbm5lY3Rpb24iLHZhbHVlOmZ1bmN0aW9uKCl7cmV0dXJuImNvbm5lY3Rpb24iaW4gbmF2aWdhdG9yJiYiZWZmZWN0aXZlVHlwZSJpbiBuYXZpZ2F0b3IuY29ubmVjdGlvbiYmKCIyZyI9PT1uYXZpZ2F0b3IuY29ubmVjdGlvbi5lZmZlY3RpdmVUeXBlfHwic2xvdy0yZyI9PT1uYXZpZ2F0b3IuY29ubmVjdGlvbi5lZmZlY3RpdmVUeXBlKX19XSksUm9ja2V0QnJvd3NlckNvbXBhdGliaWxpdHlDaGVja2VyfSgpOwovLyMgc291cmNlVVJMPXJvY2tldC1icm93c2VyLWNoZWNrZXItanMtYWZ0ZXIKLyogXV0+ICovCg==" data-rocket-status="executed">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://demofortunetiger.com","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-after" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwooZnVuY3Rpb24oKSB7CiJ1c2Ugc3RyaWN0Ijt2YXIgcj0iZnVuY3Rpb24iPT10eXBlb2YgU3ltYm9sJiYic3ltYm9sIj09dHlwZW9mIFN5bWJvbC5pdGVyYXRvcj9mdW5jdGlvbihlKXtyZXR1cm4gdHlwZW9mIGV9OmZ1bmN0aW9uKGUpe3JldHVybiBlJiYiZnVuY3Rpb24iPT10eXBlb2YgU3ltYm9sJiZlLmNvbnN0cnVjdG9yPT09U3ltYm9sJiZlIT09U3ltYm9sLnByb3RvdHlwZT8ic3ltYm9sIjp0eXBlb2YgZX0sZT1mdW5jdGlvbigpe2Z1bmN0aW9uIGkoZSx0KXtmb3IodmFyIG49MDtuPHQubGVuZ3RoO24rKyl7dmFyIGk9dFtuXTtpLmVudW1lcmFibGU9aS5lbnVtZXJhYmxlfHwhMSxpLmNvbmZpZ3VyYWJsZT0hMCwidmFsdWUiaW4gaSYmKGkud3JpdGFibGU9ITApLE9iamVjdC5kZWZpbmVQcm9wZXJ0eShlLGkua2V5LGkpfX1yZXR1cm4gZnVuY3Rpb24oZSx0LG4pe3JldHVybiB0JiZpKGUucHJvdG90eXBlLHQpLG4mJmkoZSxuKSxlfX0oKTtmdW5jdGlvbiBpKGUsdCl7aWYoIShlIGluc3RhbmNlb2YgdCkpdGhyb3cgbmV3IFR5cGVFcnJvcigiQ2Fubm90IGNhbGwgYSBjbGFzcyBhcyBhIGZ1bmN0aW9uIil9dmFyIHQ9ZnVuY3Rpb24oKXtmdW5jdGlvbiBuKGUsdCl7aSh0aGlzLG4pLHRoaXMuYnJvd3Nlcj1lLHRoaXMuY29uZmlnPXQsdGhpcy5vcHRpb25zPXRoaXMuYnJvd3Nlci5vcHRpb25zLHRoaXMucHJlZmV0Y2hlZD1uZXcgU2V0LHRoaXMuZXZlbnRUaW1lPW51bGwsdGhpcy50aHJlc2hvbGQ9MTExMSx0aGlzLm51bU9uSG92ZXI9MH1yZXR1cm4gZShuLFt7a2V5OiJpbml0Iix2YWx1ZTpmdW5jdGlvbigpeyF0aGlzLmJyb3dzZXIuc3VwcG9ydHNMaW5rUHJlZmV0Y2goKXx8dGhpcy5icm93c2VyLmlzRGF0YVNhdmVyTW9kZU9uKCl8fHRoaXMuYnJvd3Nlci5pc1Nsb3dDb25uZWN0aW9uKCl8fCh0aGlzLnJlZ2V4PXtleGNsdWRlVXJpczpSZWdFeHAodGhpcy5jb25maWcuZXhjbHVkZVVyaXMsImkiKSxpbWFnZXM6UmVnRXhwKCIuKCIrdGhpcy5jb25maWcuaW1hZ2VFeHQrIikkIiwiaSIpLGZpbGVFeHQ6UmVnRXhwKCIuKCIrdGhpcy5jb25maWcuZmlsZUV4dCsiKSQiLCJpIil9LHRoaXMuX2luaXRMaXN0ZW5lcnModGhpcykpfX0se2tleToiX2luaXRMaXN0ZW5lcnMiLHZhbHVlOmZ1bmN0aW9uKGUpey0xPHRoaXMuY29uZmlnLm9uSG92ZXJEZWxheSYmZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcigibW91c2VvdmVyIixlLmxpc3RlbmVyLmJpbmQoZSksZS5saXN0ZW5lck9wdGlvbnMpLGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoIm1vdXNlZG93biIsZS5saXN0ZW5lci5iaW5kKGUpLGUubGlzdGVuZXJPcHRpb25zKSxkb2N1bWVudC5hZGRFdmVudExpc3RlbmVyKCJ0b3VjaHN0YXJ0IixlLmxpc3RlbmVyLmJpbmQoZSksZS5saXN0ZW5lck9wdGlvbnMpfX0se2tleToibGlzdGVuZXIiLHZhbHVlOmZ1bmN0aW9uKGUpe3ZhciB0PWUudGFyZ2V0LmNsb3Nlc3QoImEiKSxuPXRoaXMuX3ByZXBhcmVVcmwodCk7aWYobnVsbCE9PW4pc3dpdGNoKGUudHlwZSl7Y2FzZSJtb3VzZWRvd24iOmNhc2UidG91Y2hzdGFydCI6dGhpcy5fYWRkUHJlZmV0Y2hMaW5rKG4pO2JyZWFrO2Nhc2UibW91c2VvdmVyIjp0aGlzLl9lYXJseVByZWZldGNoKHQsbiwibW91c2VvdXQiKX19fSx7a2V5OiJfZWFybHlQcmVmZXRjaCIsdmFsdWU6ZnVuY3Rpb24odCxlLG4pe3ZhciBpPXRoaXMscj1zZXRUaW1lb3V0KGZ1bmN0aW9uKCl7aWYocj1udWxsLDA9PT1pLm51bU9uSG92ZXIpc2V0VGltZW91dChmdW5jdGlvbigpe3JldHVybiBpLm51bU9uSG92ZXI9MH0sMWUzKTtlbHNlIGlmKGkubnVtT25Ib3Zlcj5pLmNvbmZpZy5yYXRlVGhyb3R0bGUpcmV0dXJuO2kubnVtT25Ib3ZlcisrLGkuX2FkZFByZWZldGNoTGluayhlKX0sdGhpcy5jb25maWcub25Ib3ZlckRlbGF5KTt0LmFkZEV2ZW50TGlzdGVuZXIobixmdW5jdGlvbiBlKCl7dC5yZW1vdmVFdmVudExpc3RlbmVyKG4sZSx7cGFzc2l2ZTohMH0pLG51bGwhPT1yJiYoY2xlYXJUaW1lb3V0KHIpLHI9bnVsbCl9LHtwYXNzaXZlOiEwfSl9fSx7a2V5OiJfYWRkUHJlZmV0Y2hMaW5rIix2YWx1ZTpmdW5jdGlvbihpKXtyZXR1cm4gdGhpcy5wcmVmZXRjaGVkLmFkZChpLmhyZWYpLG5ldyBQcm9taXNlKGZ1bmN0aW9uKGUsdCl7dmFyIG49ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgibGluayIpO24ucmVsPSJwcmVmZXRjaCIsbi5ocmVmPWkuaHJlZixuLm9ubG9hZD1lLG4ub25lcnJvcj10LGRvY3VtZW50LmhlYWQuYXBwZW5kQ2hpbGQobil9KS5jYXRjaChmdW5jdGlvbigpe30pfX0se2tleToiX3ByZXBhcmVVcmwiLHZhbHVlOmZ1bmN0aW9uKGUpe2lmKG51bGw9PT1lfHwib2JqZWN0IiE9PSh2b2lkIDA9PT1lPyJ1bmRlZmluZWQiOnIoZSkpfHwhMSBpbiBlfHwtMT09PVsiaHR0cDoiLCJodHRwczoiXS5pbmRleE9mKGUucHJvdG9jb2wpKXJldHVybiBudWxsO3ZhciB0PWUuaHJlZi5zdWJzdHJpbmcoMCx0aGlzLmNvbmZpZy5zaXRlVXJsLmxlbmd0aCksbj10aGlzLl9nZXRQYXRobmFtZShlLmhyZWYsdCksaT17b3JpZ2luYWw6ZS5ocmVmLHByb3RvY29sOmUucHJvdG9jb2wsb3JpZ2luOnQscGF0aG5hbWU6bixocmVmOnQrbn07cmV0dXJuIHRoaXMuX2lzTGlua09rKGkpP2k6bnVsbH19LHtrZXk6Il9nZXRQYXRobmFtZSIsdmFsdWU6ZnVuY3Rpb24oZSx0KXt2YXIgbj10P2Uuc3Vic3RyaW5nKHRoaXMuY29uZmlnLnNpdGVVcmwubGVuZ3RoKTplO3JldHVybiBuLnN0YXJ0c1dpdGgoIi8iKXx8KG49Ii8iK24pLHRoaXMuX3Nob3VsZEFkZFRyYWlsaW5nU2xhc2gobik/bisiLyI6bn19LHtrZXk6Il9zaG91bGRBZGRUcmFpbGluZ1NsYXNoIix2YWx1ZTpmdW5jdGlvbihlKXtyZXR1cm4gdGhpcy5jb25maWcudXNlc1RyYWlsaW5nU2xhc2gmJiFlLmVuZHNXaXRoKCIvIikmJiF0aGlzLnJlZ2V4LmZpbGVFeHQudGVzdChlKX19LHtrZXk6Il9pc0xpbmtPayIsdmFsdWU6ZnVuY3Rpb24oZSl7cmV0dXJuIG51bGwhPT1lJiYib2JqZWN0Ij09PSh2b2lkIDA9PT1lPyJ1bmRlZmluZWQiOnIoZSkpJiYoIXRoaXMucHJlZmV0Y2hlZC5oYXMoZS5ocmVmKSYmZS5vcmlnaW49PT10aGlzLmNvbmZpZy5zaXRlVXJsJiYtMT09PWUuaHJlZi5pbmRleE9mKCI/IikmJi0xPT09ZS5ocmVmLmluZGV4T2YoIiMiKSYmIXRoaXMucmVnZXguZXhjbHVkZVVyaXMudGVzdChlLmhyZWYpJiYhdGhpcy5yZWdleC5pbWFnZXMudGVzdChlLmhyZWYpKX19XSxbe2tleToicnVuIix2YWx1ZTpmdW5jdGlvbigpeyJ1bmRlZmluZWQiIT10eXBlb2YgUm9ja2V0UHJlbG9hZExpbmtzQ29uZmlnJiZuZXcgbihuZXcgUm9ja2V0QnJvd3NlckNvbXBhdGliaWxpdHlDaGVja2VyKHtjYXB0dXJlOiEwLHBhc3NpdmU6ITB9KSxSb2NrZXRQcmVsb2FkTGlua3NDb25maWcpLmluaXQoKX19XSksbn0oKTt0LnJ1bigpOwp9KCkpOwoKLy8jIHNvdXJjZVVSTD1yb2NrZXQtcHJlbG9hZC1saW5rcy1qcy1hZnRlcgovKiBdXT4gKi8K" data-rocket-status="executed">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket_lazyload_css-js-extra">
+/* <![CDATA[ */
+var rocket_lazyload_css_data = {"threshold":"300"};
+//# sourceURL=rocket_lazyload_css-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket_lazyload_css-js-after">
+/* <![CDATA[ */
+!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
+//# sourceURL=rocket_lazyload_css-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" defer="defer" id="imagesloaded-js" fetchpriority="high" src="./scripts/imagesloaded.min.js" data-rocket-status="executed"></script>
+<script type="text/javascript" defer="defer" id="masonry-js" fetchpriority="high" src="./scripts/masonry.min.js" data-rocket-status="executed"></script>
+<script type="text/javascript" defer="defer" id="mesmerize-theme-js" fetchpriority="high" src="./scripts/theme.bundle.min.js" data-rocket-status="executed"></script>
+<script type="text/javascript" data-minify="1" id="theme-child-js" data-rocket-defer="" defer fetchpriority="high" src="./scripts/theme-child.js" data-rocket-status="executed"></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="./scripts/lazyload.min.js"></script><script defer src="./scripts/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;02dca2dba6b945c3ac66c0c6d19cbef6&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+
+
+<div id="give-freely-root-ejkiikneibegknkgimmihdpcbcedgmpo" class="give-freely-root" data-extension-id="ejkiikneibegknkgimmihdpcbcedgmpo" data-extension-name="Volume Booster" style="display: block;"></div><div id="offcanvas-wrapper" class="hide offcanvas-right offcanvas">
+        <div class="offcanvas-top">
+            <div class="logo-holder">
+                <a class="text-logo" data-type="group" data-dynamic-mod="true" href="https://demofortunetiger.com/" data-wpel-link="internal">Fortune<span style="font-weight: 300;" class="span12"> Tiger</span></a>            </div>
+        </div>
+        <div id="offcanvas-menu" class="menu-menu-1-container"><ul id="offcanvas_menu" class="offcanvas_menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-14 menu-item-35212"><a href="https://demofortunetiger.com/" aria-current="page" data-wpel-link="internal">Demo Free</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-35876 current-menu-item"><a href="https://demofortunetiger.com/#estrategias" aria-current="page" data-wpel-link="internal">Strategy</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-38430"><a href="./pages/noticias.html" data-wpel-link="internal">Notícias</a></li>
+</ul></div>
+            </div><span class="fancybox-focus-guard" tabindex="0" aria-hidden="true" aria-label="Focus guard"></span><div class="fancybox__container has-toolbar is-idle" role="dialog" aria-modal="true" aria-label="You can close this modal content with the ESC key" tabindex="-1" id="fancybox-2" aria-hidden="false"><div class="fancybox__toolbar"><div class="fancybox__toolbar__column is-left"></div><div class="fancybox__toolbar__column is-middle"></div><div class="fancybox__toolbar__column is-right"><button class="f-button" title="Toggle full-screen mode" data-fancybox-toggle-fullscreen=""><svg tabindex="-1" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g><path d="M4 8V6a2 2 0 0 1 2-2h2M4 16v2a2 2 0 0 0 2 2h2M16 4h2a2 2 0 0 1 2 2v2M16 20h2a2 2 0 0 0 2-2v-2" /></g><g><path d="M15 19v-2a2 2 0 0 1 2-2h2M15 5v2a2 2 0 0 0 2 2h2M5 15h2a2 2 0 0 1 2 2v2M5 9h2a2 2 0 0 0 2-2V5" /></g></svg></button><button class="f-button" title="Close" data-fancybox-close=""><svg tabindex="-1" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m19.5 4.5-15 15M4.5 4.5l15 15" /></svg></button></div></div>
+    <div class="fancybox__backdrop"></div>
+    <div class="fancybox__carousel is-ltr is-horizontal"><div class="fancybox__viewport"><div class="fancybox__track" aria-live="polite" style="transform: matrix(1, 0, 0, 1, 0, 0);"><div class="fancybox__slide has-iframe is-selected is-done" data-index="0"><div class="fancybox__content" style="flex: 0 1 auto; width: 1280px; height: 680px;"><iframe class="fancybox__iframe" id="fancybox__iframe_2_0" allow="autoplay; fullscreen" scrolling="auto" src="https://public.pg-demo.com/demo/?gi=126&lang=en" data-ready="true"></iframe></div></div></div></div></div>
+    <div class="fancybox__footer"></div>
+  </div><span class="fancybox-focus-guard" tabindex="0" aria-hidden="true" aria-label="Focus guard"></span></body></html>
